@@ -5,11 +5,10 @@ export const SEARCHFIELDCOMPONENTSTYLES = {
     PRIMARYBUTTON: "pa1 ma0 br1 bg-green white b--none",
     HEROSEARCHFIELD: "w-100 flex flex-row justify-center pv2 ph3",
 }
-export const SearchFieldComponent = ({apiFunctions, submitSearchFieldAction, sendSearchFieldAction, buttonstyle, searchfieldstyle }) => {
+export const SearchFieldComponent = ({ submitSearchFieldAction, sendSearchFieldAction, buttonstyle, searchfieldstyle }) => {
     
-    function onClickHandler(sendSearchFieldAction, apiFunctions) {
+    function onClickHandler(sendSearchFieldAction) {
     sendSearchFieldAction();
-    apiFunctions();
     }
           
     return (
@@ -22,14 +21,13 @@ export const SearchFieldComponent = ({apiFunctions, submitSearchFieldAction, sen
                 onKeyPress={(event) => {
                     if(event.key === "Enter") {
                         sendSearchFieldAction();
-                        apiFunctions();
                     }
                 }}
             >
             </input>
              <button
                 className={buttonstyle}
-                onClick={() => onClickHandler(sendSearchFieldAction, apiFunctions)}
+                onClick={() => onClickHandler(sendSearchFieldAction)}
             >Search</button>
         </div>
     )

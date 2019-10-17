@@ -6,16 +6,16 @@ export const Navigation = ({ displaySignUpModalAction, displayLogInModalAction, 
     return (
         <div>
             <nav className="
-                w-100 flex flex-row justify-between items-center ph3 pv3
+                w-100 flex flex-row justify-between items-center ph3 pv3 bg-light-gray
                 flex-column-ns
                 flex-column-m 
                 flex-row-l"
             >
                 <div className="">
                     <div className="flex items-center">
-                        <a className="w-100 flex " href="#" title="Home">
-                            <div className="dib w2 h2 no-underline">
-                                <p className="no-underline">SVG HERE</p>
+                        <a className="w-100 flex no-underline" href="#" title="Home">
+                            <div className="dib w2 h2">
+                                <p className="">SVG</p>
                             </div>
                         </a>
                         <h1 
