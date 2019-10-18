@@ -113,7 +113,7 @@ export const unDisplayMobileMenuAction = (payload) => {
 
 
 export const sendSearchFieldAction = () => {
-    fetch('https://myoutdoortrailsnode.herokuapp.com/searchfield', {
+    fetch('localhost:3000/searchfield', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -124,7 +124,7 @@ export const sendSearchFieldAction = () => {
 }
 
 export const sendSignUpAction = () => {
-    fetch('https://myoutdoortrailsnode.herokuapp.com/signup', {
+    fetch('localhost:3000/signup', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -144,7 +144,7 @@ export const sendSignUpAction = () => {
 }
 
 export const sendLogIn = () => {
-    fetch('https://myoutdoortrailsnode.herokuapp.com/login', {
+    fetch('localhost:3000/login', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
