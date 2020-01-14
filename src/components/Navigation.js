@@ -20,7 +20,7 @@ export const Navigation = ({ displaySignUpModalAction, displayLogInModalAction, 
                         </a>
                         <h1 
                             className="flex f5 f4-ns f3-m f2-l pl1 ma0"
-                        >Title</h1>
+                        >Applied Machine Learning APIS</h1>
                     </div>
                 </div>
                 {
@@ -39,7 +39,9 @@ export const Navigation = ({ displaySignUpModalAction, displayLogInModalAction, 
                     className="w-100 h2 mt3 flex items-center justify-center tc
                     justify-end-l
                     ">
-                        <div className="link dim dark-gray f6 f5-l dib mr3 mr4-l pointer" title="Featured"><a href="#featuredhikes" className="no-underline dark-gray">Featured Hikes</a></div>
+                        <div className="link dim dark-gray f6 f5-l dib mr3 mr4-l pointer" title="apilist"><a href="#apilist" className="no-underline dark-gray">API List</a></div>
+                        <div className="link dim dark-gray f6 f5-l dib mr3 mr4-l pointer" title="articles"><a href="#articles" className="no-underline dark-gray">Articles</a></div>
+                        <div className="link dim dark-gray f6 f5-l dib mr3 mr4-l pointer" title="tutorials"><a href="#tutorials" className="no-underline dark-gray">Tutorials</a></div>
                     {
                         loggedIn ? 
                         <div className="flex flex-row items-center">
