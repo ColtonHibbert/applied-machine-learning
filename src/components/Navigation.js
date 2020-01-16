@@ -1,7 +1,6 @@
 import React from 'react';
 import { store } from '../index.js';
 
-
 export const Navigation = ({ displaySignUpModalAction, displayLogInModalAction, signOut, loggedIn, isMobile, displayMobileMenuAction, name }) => {
     return (
         <div>
@@ -39,6 +38,7 @@ export const Navigation = ({ displaySignUpModalAction, displayLogInModalAction, 
                     className="w-100 h2 mt3 flex items-center justify-center tc
                     justify-end-l
                     ">
+                        <input className="link dim dark-gray f6 f5-l dib mr3 mr4-l pointer" type="text" placeholder="Search for APIS"></input>
                         <div className="link dim dark-gray f6 f5-l dib mr3 mr4-l pointer" title="apilist"><a href="#apilist" className="no-underline dark-gray">API List</a></div>
                         <div className="link dim dark-gray f6 f5-l dib mr3 mr4-l pointer" title="articles"><a href="#articles" className="no-underline dark-gray">Articles</a></div>
                         <div className="link dim dark-gray f6 f5-l dib mr3 mr4-l pointer" title="tutorials"><a href="#tutorials" className="no-underline dark-gray">Tutorials</a></div>
