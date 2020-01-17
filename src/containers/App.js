@@ -8,6 +8,9 @@ import SignUp from '../components/SignUp.js'
 import LogIn from '../components/LogIn'
 import MobileMenu from '../components/MobileMenu.js'
 import MobileMenuItem from '../components/MobileMenuItem.js'
+import Categories from '../components/Categories.js'
+import ContentCards from '../components/ContentCards.js'
+import Card from '../components/Card.js'
 import { SearchFieldComponent, SEARCHFIELDCOMPONENTSTYLES } from '../components/SearchFieldComponent.js'
 import debounce from 'lodash.debounce'
 import { 
@@ -140,6 +143,14 @@ class App extends Component {
         </MobileMenu>
         : ''
       }
+      <div className="w-100 vh-50 flex flex-row">
+        <Categories></Categories>
+        <ContentCards>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </ContentCards>
+      </div>
   </div>
     )
   }
