@@ -2,8 +2,8 @@ import React from 'react';
 
 const Categories = () => {
     return (
-        <div className="w-100 flex justify-center">
-            <div className="w-20">
+        <div className="flex justify-center">
+            <div className="">
                 <div className=""> Categories</div>
                 <ul className="pl0 list">
                     <li className="pl0 list">Free</li>
