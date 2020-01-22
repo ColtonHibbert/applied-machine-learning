@@ -11,6 +11,7 @@ import MobileMenuItem from '../components/MobileMenuItem.js'
 import Categories from '../components/Categories.js'
 import ContentCards from '../components/ContentCards.js'
 import Card from '../components/Card.js'
+import Footer from '../components/Footer.js'
 import { SearchFieldComponent, SEARCHFIELDCOMPONENTSTYLES } from '../components/SearchFieldComponent.js'
 import debounce from 'lodash.debounce'
 import { 
@@ -151,6 +152,7 @@ class App extends Component {
           <Card></Card>
         </ContentCards>
       </div>
+      <Footer />
   </div>
     )
   }
