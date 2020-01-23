@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
 import 'tachyons'
+import '../styles.css'
 import { connect } from 'react-redux'
 import { store } from '../index.js'
 import Navigation from '../components/Navigation.js' 
@@ -8,6 +9,7 @@ import SignUp from '../components/SignUp.js'
 import LogIn from '../components/LogIn'
 import MobileMenu from '../components/MobileMenu.js'
 import MobileMenuItem from '../components/MobileMenuItem.js'
+import Hero from '../components/Hero.js'
 import Categories from '../components/Categories.js'
 import ContentCards from '../components/ContentCards.js'
 import Card from '../components/Card.js'
@@ -144,6 +146,9 @@ class App extends Component {
         </MobileMenu>
         : ''
       }
+      <div>
+        <Hero></Hero>
+      </div>
       <div className="w-100 vh-50 flex flex-row">
         <Categories></Categories>
         <ContentCards>
