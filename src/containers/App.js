@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
-import logo from './logo.svg'
-import 'tachyons'
-import '../styles.css'
-import { connect } from 'react-redux'
-import { store } from '../index.js'
-import Navigation from '../components/Navigation.js' 
-import SignUp from '../components/SignUp.js'
-import LogIn from '../components/LogIn'
-import MobileMenu from '../components/MobileMenu.js'
-import MobileMenuItem from '../components/MobileMenuItem.js'
-import Hero from '../components/Hero.js'
-import Categories from '../components/Categories.js'
-import ContentCards from '../components/ContentCards.js'
-import Card from '../components/Card.js'
-import Footer from '../components/Footer.js'
-import { SearchFieldComponent, SEARCHFIELDCOMPONENTSTYLES } from '../components/SearchFieldComponent.js'
-import debounce from 'lodash.debounce'
+import React, { Component } from 'react';
+import 'tachyons';
+import '../styles.css';
+import { connect } from 'react-redux';
+import { store } from '../index.js';
+import Navigation from '../components/Navigation.js' ;
+import SignUp from '../components/SignUp.js';
+import LogIn from '../components/LogIn';
+import MobileMenu from '../components/MobileMenu.js';
+import MobileMenuItem from '../components/MobileMenuItem.js';
+import Hero from '../components/Hero.js';
+import Feed from '../components/Feed.js';
+import Categories from '../components/Categories.js';
+import ContentCards from '../components/ContentCards.js';
+import Card from '../components/Card.js';
+import Footer from '../components/Footer.js';
+import { SearchFieldComponent, SEARCHFIELDCOMPONENTSTYLES } from '../components/SearchFieldComponent.js';
+import debounce from 'lodash.debounce';
 import { 
   displaySignUpModalAction,
   displayLogInModalAction,
@@ -31,7 +31,7 @@ import {
   isMobileAction,
   displayMobileMenuAction,
   unDisplayMobileMenuAction,
-} from '../services/actions.js'
+} from '../services/actions.js';
 
 
 const mapStateToProps = (state) => {
@@ -132,7 +132,7 @@ class App extends Component {
             buttonstyle={SEARCHFIELDCOMPONENTSTYLES.PRIMARYBUTTON}
             searchfieldstyle={SEARCHFIELDCOMPONENTSTYLES.MOBILEMENUSEARCHFIELD}
           />
-          <MobileMenuItem text="Featured Hikes" link="#featuredhikes"/>
+          <MobileMenuItem text="API LIST" link="#apilist"/>
           {
             !this.props.loggedIn ?
             <div className="w-100">
@@ -149,6 +149,7 @@ class App extends Component {
       <div>
         <Hero></Hero>
       </div>
+      <Feed></Feed>
       <div className="w-100 vh-50 flex flex-row">
         <Categories></Categories>
         <ContentCards>

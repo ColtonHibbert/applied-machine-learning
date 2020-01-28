@@ -1,5 +1,6 @@
 import React from 'react';
 import { store } from '../index.js';
+import BrainHead from '../icons8-head-with-brain-64.png'
 
 export const Navigation = ({ displaySignUpModalAction, displayLogInModalAction, signOut, loggedIn, isMobile, displayMobileMenuAction, name }) => {
     return (
@@ -13,8 +14,8 @@ export const Navigation = ({ displaySignUpModalAction, displayLogInModalAction, 
                 <div className="">
                     <div className="flex items-center">
                         <a className="w-100 flex no-underline" href="#" title="Home">
-                            <div className="dib w2 h2">
-                                <p className="">SVG</p>
+                            <div className="dib w3 h3">
+                                <img src={BrainHead}></img>
                             </div>
                         </a>
                         <h1 
