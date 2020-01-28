@@ -72,8 +72,10 @@ class App extends Component {
   }
   
   updateDimensions = debounce(() => {
-      const minWidth = window.innerWidth;
+      //const minWidth = window.innerWidth;
+      const minWidth = document.documentElement.clientWidth
       const greaterThanMobileWidth = 479;
+      console.log(minWidth)
       if(minWidth < greaterThanMobileWidth) {
         store.dispatch(isMobileAction(true))
       }
